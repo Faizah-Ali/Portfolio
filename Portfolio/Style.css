@@ -281,6 +281,114 @@ span{
     }    
 }
 
+/* ABOUT SECTION CSS */
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2em;
+    background: var(--second-bg-color);
+}
+
+.about .about-img{
+    text-align: center;
+    position: relative;
+}
+
+.about .about-img img{
+    max-width: 400px;
+    height: auto;
+}
+
+.about-content span{
+    color: #fdfdfd;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.about-content h2{
+    color: #00ffee;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about-content h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: .2rem;
+}
+
+.about-content p{
+    color: white;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.about-info1,
+.about-info2{
+    background: var(--bg-color);
+    font-size: .5rem;
+    position: absolute;
+    padding: 10px;
+    width: 90px;
+    height: 90px;
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    display: block;
+    box-shadow: #cb08a4;
+    border: 1px solid var(--main-color);
+    outline: 2px solid var(--bg-color);
+    z-index: 100;
+    animation: morph 6s linear infinite;
+}
+
+.about-info1{
+    left: 1%;
+    top: 63%;
+}
+
+.about-info2{
+    left: 72%;
+    top: 80%;
+}
+
+.about-img span{
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.liquid-shape{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 10%;
+}
+
+.liquid-shape:nth-child(2){
+    filter: blur(50px);
+}
+
+@keyframes morph {
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+    60%{
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+    80%{
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+    
+}
+
 /* EDUCATION SECTION CSS */
 
 .heading{
@@ -565,6 +673,17 @@ span{
     color: white;
 }
 
+#menu-icon{
+    font-size: 1.8rem;
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    background: var(--main-color);
+    border-radius: 3px;
+    color: var(--second-bg-color);
+    display: none;
+}
+
 @media(max-width:1258px){
     html{
         font-size: 55%;
@@ -611,7 +730,7 @@ span{
 
 @media (max-width:895px) {
     #menu-icon{
-        display: block;
+        display: none;
     }
     .navbar{
         position: absolute;
