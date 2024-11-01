@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -10,9 +12,9 @@
 }
 
 :root{
-    --bg-color : #080808;
-    --second-bg-color : #131313;
-    --text-color : white;
+    /* --bg-color : #080808;
+    --second-bg-color : #131313;*/
+    --text-color : black; 
     --main-color : #00ffee;
 }
 
@@ -281,6 +283,8 @@ span{
     }    
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /* ABOUT SECTION CSS */
 
 .about{
@@ -389,9 +393,11 @@ span{
     
 }
 
-/* EDUCATION SECTION CSS */
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.heading{
+/*  EDUCATION SECTION CSS  */
+
+.edu-heading{
     font-size: 8rem;
     text-align: center;
     margin: 5rem 0;
@@ -406,7 +412,7 @@ span{
     margin-bottom: 5rem;
 }
 
-.timeline-items{
+.edu-timeline-items{
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -414,7 +420,7 @@ span{
     position: relative;
 }
 
-.timeline-items::before{
+.edu-timeline-items::before{
     content: "";
     position: absolute;
     width: 5px;
@@ -423,26 +429,27 @@ span{
     left: calc(50% - 1px);
 }
 
-.timeline-item{
+
+.edu-timeline-item{
     margin-bottom: 40px;
     width: 100%;
     position: relative;
 }
 
-.timeline-item:last-child{
+.edu-timeline-item:last-child{
     margin-bottom: 0;
 }
 
-.timeline-item:nth-child(odd){
+.edu-timeline-item:nth-child(odd){
     padding-right: calc(50% + 30px);
     text-align: right;
 }
 
-.timeline-item:nth-child(even){
+.edu-timeline-item:nth-child(even){
     padding-left: calc(50% + 30px);
 }
 
-.timeline-dot{
+.edu-timeline-dot{
     height: 21px;
     width: 21px;
     background-color: var(--main-color);
@@ -454,14 +461,14 @@ span{
     top: 10px;
 }
 
-.timeline-data{
+.edu-timeline-data{
     font-size: 20px;
     font-weight: 800;
     color: white;
     margin: 6px 0 15px;
 }
 
-.timeline-content{
+.edu-timeline-content{
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
     padding: 30px 50px;
@@ -471,19 +478,19 @@ span{
     transition: 0.3s ease-in-out;
 }
 
-.timeline-content:hover{
+.edu-timeline-content:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
 
-.timeline-content h3{
+.edu-timeline-content h3{
     color: white;
     font-size: 20px;
     font-weight: 500;
     margin: 0 0 10px;
 }
 
-.timeline-content p{
+.edu-timeline-content p{
     color: white;
     font-size: 16px;
     font-weight: 300;
@@ -502,6 +509,116 @@ span{
     background-color: var(--bg-color);
     width: 50px;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* SKILLS SECTION CSS */
+
+/* Base styling for banner and slider */
+.banner {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: yellow;
+    margin-top:7% ;
+}
+
+.banner .slider {
+    position: absolute;
+    width: 200px; /* Responsive width based on viewport */
+    height: 250px; /* Responsive height based on viewport */
+    top: 10%;
+    left: calc(50% - 100px);
+    /* transform: translateX(-50%); */
+    transform-style: preserve-3d;
+    transform: perspective(1200px);
+    animation: autoRun 60s linear infinite;
+    z-index: 1;
+}
+
+@keyframes autoRun {
+    from {
+        transform: perspective(1200px) rotateX(-16deg) rotateY(0deg);
+    }
+    to {
+        transform: perspective(1200px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+/* Individual item positioning and transformation */
+.banner .slider .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+               translateZ(550px); /* Responsive translateZ based on viewport */
+}
+
+/* Image styling with aspect ratio handling */
+.banner .slider .item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Prevents cutting edges */
+    padding: 5px;
+}
+
+/* Centered "MySkills" image styling */
+.banner .model {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18vw; /* Responsive width based on viewport */
+    height: 25vw; /* Maintain aspect ratio */
+    z-index: 2; /* Ensures "MySkills" image stays above the rotating items */
+}
+
+.banner .model img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Responsive adjustments for tablet screens */
+@media (max-width: 768px) {
+    .banner .slider {
+        width: 150px;
+        height: 200px;
+        transform: perspective(900px);
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+                   translateZ(400px); /* Reduced translateZ for smaller screens */
+    }
+
+    .banner .model {
+        width: 14vw;
+        height: 14vw;
+    }
+}
+
+/* Responsive adjustments for small screens (e.g., mobile) */
+@media (max-width: 480px) {
+    .banner .slider {
+        width: 120px;
+        height: 160px;
+        transform: perspective(700px);
+    }
+
+    .banner .slider .item {
+        transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+                   translateZ(400px); /* Further reduced translateZ for compact layout */
+    }
+
+    .banner .model {
+        width: 12vw;
+        height: 12vw;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* SERVICES SECTION CSS */
 
@@ -562,6 +679,227 @@ span{
     margin: auto;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* PROJECTS SECTION CSS */
+
+.project-title {
+    position: absolute;
+    top: 7px;
+    font-size: 4em;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+.project-container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.project-slider{
+    position: absolute;
+    inset: 80px 200px 80px 80px;
+    background: #ccc;
+    border-radius: 20px;
+}
+
+.project-slider .project-slides{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 240px;
+    height: 320px;
+    background: var(--img);
+    background-size:cover;
+    background-position: center;
+    transition: 0.5s;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.project-slider .project-slides:nth-child(1),
+.project-slider .project-slides:nth-child(2){
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    box-shadow: 0 25px 50px rgba(0,0,0,0);
+    background-size: cover;
+}
+
+.project-slider .project-slides:nth-child(3){
+    left: calc(50% + 240px);
+    background-size: cover;
+}
+
+.project-slider .project-slides:nth-child(4){
+    left: calc(50% + 500px);
+    background-size: cover;
+}
+
+.project-slider .project-slides:nth-child(5){
+    left: calc(50% + 760px);
+    background-size: cover;
+     /* opacity: 0; remove it when add 6th project */
+}
+
+.project-slider .project-slides:nth-child(6){
+    left: calc(50% + 1020px);
+    background-size: cover;
+    opacity: 0;
+    
+}
+
+.project-buttons{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+
+.project-buttons span{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.project-buttons span::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(315deg) translate(2px,2px);
+}
+
+
+.project-buttons span:nth-child(2)::before{
+    transform: rotate(135deg) translate(2px,2px);
+}
+
+.project-buttons span:active{
+    opacity: 0.5;
+}
+
+.project-content{
+    position: relative;
+    padding: 40px;
+    max-width: 600px;
+    transition: 0.25s;
+    transition-delay: 0s;
+    transform: translateY(40px);
+    z-index: 10000;
+    opacity: 0;
+}
+
+.project-content h1{
+    font-size: 2.8em;
+    color: black;
+}
+
+.project-content p{
+    color: black;
+}
+
+.project-slider .project-slides:nth-child(1) .project-content,
+.project-slider .project-slides:nth-child(2) .project-content{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+}
+
+/* Responsiveness */
+@media (max-width : 900px){
+    .project-slider{
+        position: absolute;
+        inset: 40px 40px 200px 40px;
+    }
+
+    .project-slider .project-slides{
+        width: 100px;
+        height: 100px;
+        top: initial;
+        bottom: -170px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .project-slider .project-slides:nth-child(1),
+    .project-slider .project-slides:nth-child(2){
+        top: initial;
+        bottom: 0px;
+    }
+
+    .project-slider .project-slides:nth-child(3){
+        left: 0;
+    }
+
+    .project-slider .project-slides:nth-child(4){
+        left: 120px;
+    }
+
+    .project-slider .project-slides:nth-child(5){
+        left: 240px;
+    }
+
+    .project-slider .project-slides:nth-child(6){
+        left: 360px;
+    } 
+
+
+}
+
+/* Responsive font size adjustments */
+@media (max-width: 1200px) {
+    .project-title {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 900px) {
+    .project-title {
+        font-size: 1.5em;
+        top: 5px; /* Adjust positioning if needed */
+    }
+}
+
+@media (max-width: 600px) {
+    .project-title {
+        font-size: 1.2em;
+        top: 5px;
+    }
+}
+
+@media (max-width: 400px) {
+    .project-title {
+        font-size: 1em;
+        top: 5px;
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 /* CONTACT SECTION CSS */
 
 .contact{
@@ -604,6 +942,8 @@ span{
 .contact form .btn{
     margin-top: 2rem;
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* FOOTER SECTION CSS */
 
