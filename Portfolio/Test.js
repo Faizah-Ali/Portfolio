@@ -1,13 +1,31 @@
-let next = document.querySelector('.next');
-let prev = document.querySelector('.prev');
-let slider = document.querySelector('.project-slider');
+async function submitForm(event) {
+    event.preventDefault();
 
-next.addEventListener('click', function(){
-    let slides = document.querySelectorAll('.project-slides');
-    slider.appendChild(slides[0]);
-})
+    const formData = {
+      firstName: document.getElementById('firstName').value,
+      lastName: document.getElementById('lastName').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      message: document.getElementById('message').value
+    };
 
-prev.addEventListener('click', function(){
-    let slides = document.querySelectorAll('.project-slides');
-    slider.prepend(slides[slides.length-1]);
-})
+    try {
+      const response = await fetch('/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert('Message sent successfully!');
+      } else {
+        alert('Failed to send message.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again.');
+    }
+  }

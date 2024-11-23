@@ -13,22 +13,82 @@
 
     <!-- NAVBAR SECTION -->
 
-    <header class="header">
-        <a href="#home" class="logo">Faizah<span>Ali</span></a>
+    <header class="navbar">
+        <nav class="navigation">
+        <ul>
+            <li class="nav-list active">
+                <a href="#home">
+                    <span class="nav-icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+            <li class="nav-list">
+                <a href="#about">
+                    <span class="nav-icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <span class="nav-text">About</span>
+                </a>
+            </li>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about" class="active">About</a>
-            <a href="#education" class="active">Education</a>
-            <a href="#skills" class="active">Skills</a> 
-            <a href="#services"class="active">Services</a>
-            <a href="#experience"class="active">Experience</a>
-            <a href="#project"class="active">Projects</a>
-            <a href="#contact" class="active">Contact</a>
-        </nav>
+            <li class="nav-list">
+                <a href="#education">
+                    <span class="nav-icon"><ion-icon name="school-outline"></ion-icon></span>
+                    <span class="nav-text">Education</span>
+                </a>
+            </li>
+
+            <li class="nav-list">
+                <a href="#skills">
+                    <span class="nav-icon"><ion-icon name="bulb-outline">
+                    </span>
+                    <span class="nav-text">Skills</span>
+                </a>
+            </li>
+
+            <li class="nav-list">
+                <a href="#services">
+                    <span class="nav-icon"><ion-icon name="settings-outline"></span>
+                    <span class="nav-text">Services</span>
+                </a>
+            </li>
+
+            <li class="nav-list">
+                <a href="#experience">
+                    <span class="nav-icon"><ion-icon name="time-outline"></ion-icon></span>
+                    <span class="nav-text">Experience</span>
+                </a>
+            </li>
+
+            <li class="nav-list">
+                <a href="#projects">
+                    <span class="nav-icon"><ion-icon name="folder-open-outline">
+                    </span>
+                    <span class="nav-text">Projects</span>
+                </a>
+            </li>
+
+            <li class="nav-list">
+                <a href="#certify">
+                    <span class="nav-icon"><ion-icon name="ribbon-outline">
+                    </span>
+                    <span class="nav-text">Certificates</span>
+                </a>
+            </li>
+
+            <li class="nav-list">
+                <a href="#contact">
+                    <span class="nav-icon"><ion-icon name="mail-outline">
+                    </span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+            <div class="nav-indicator"></div>
+        </ul>
+    </nav>
     </header>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -41,21 +101,21 @@
             <p>Aspiring full-stack web developer with expertise in MERN stack and strong proficiency in JavaScript, HTML5, CSS3, and database management. Seeking a dynamic role where I can apply my technical and problem-solving skills to develop scalable web applications while advancing knowledge in cloud technologies like AWS and emerging software trends.</p>
 
             <div class="social-icons">
-                <a href="#"><i class='bx bxl-gmail'></i></a>
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="mailto:faizahali2002@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                <a href="https://www.linkedin.com/in/faizah-ali02" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Faizah-Ali" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.instagram.com/er.faizahali/" target="_blank"><i class='bx bxl-instagram' ></i></a>
                 
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn">Resume</a>
+                <a href="Faizah_Ali.pdf" class="btn" download>Resume</a>
                 <a href="#contact" class="btn">Hire Me !</a>
             </div>
         </div>
 
         <div class="home-img">
-            <img src="Assets/Photo.png" alt="Photo">
+            <img src="Assets/Me/Photo.png" alt="Photo">
         </div>
     </section>
 
@@ -66,12 +126,12 @@
     <section id="about" class="about">
         <div class="about-img">
             <div class="img-box">
-            <img src="Assets/About-photo.png" alt="Photo">
+            <img src="Assets/Me/About-photo.png" alt="Photo">
             </div>
 
             <div class="liquid-shape">
                 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-                    <path fill="#00ffee">
+                    <path fill="#c71559">
                         <animate attributeName = "d"
                             dur = "10000ms" 
                             repeatCount = "indefinite" 
@@ -91,15 +151,7 @@
                             M441,288Q409,326,393,367.5Q377,409,336,429Q295,449,249,453Q203,457,154,444.5Q105,432,104.5,376Q104,320,68.5,285Q33,250,71.5,216.5Q110,183,118.5,139Q127,95,169,87.5Q211,80,254.5,60.5Q298,41,351,49Q404,57,439,99.5Q474,142,473.5,196Q473,250,441,288Z;
 
                             M458.5,304Q475,358,429.5,388Q384,418,334,409Q284,400,241.5,437Q199,474,164,437.5Q129,401,104.5,366.5Q80,332,45,291Q10,250,27,200.5Q44,151,92,132Q140,113,167.5,62Q195,11,247,22.5Q299,34,342,57Q385,80,410.5,120Q436,160,439,205Q442,250,458.5,304Z;
-                            "
-
-
-
-
-
-
-
-                                                    
+                            "                                                   
                         
                         ></animate>
                     </path>
@@ -108,7 +160,7 @@
 
             <div class="liquid-shape">
                 <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
-                    <path fill="#00ffee">
+                    <path fill="#c71559">
                         <animate attributeName = "d"
                             dur = "10000ms" 
                             repeatCount = "indefinite" 
@@ -128,15 +180,7 @@
                             M441,288Q409,326,393,367.5Q377,409,336,429Q295,449,249,453Q203,457,154,444.5Q105,432,104.5,376Q104,320,68.5,285Q33,250,71.5,216.5Q110,183,118.5,139Q127,95,169,87.5Q211,80,254.5,60.5Q298,41,351,49Q404,57,439,99.5Q474,142,473.5,196Q473,250,441,288Z;
 
                             M458.5,304Q475,358,429.5,388Q384,418,334,409Q284,400,241.5,437Q199,474,164,437.5Q129,401,104.5,366.5Q80,332,45,291Q10,250,27,200.5Q44,151,92,132Q140,113,167.5,62Q195,11,247,22.5Q299,34,342,57Q385,80,410.5,120Q436,160,439,205Q442,250,458.5,304Z;
-                            "
-
-
-
-
-
-
-
-                                                    
+                            "                                                   
                         
                         ></animate>
                     </path>
@@ -144,11 +188,11 @@
             </div>
 
             <div class="about-info1">
-                <span>6+</span>
+                <span><h1>6+</h1></span>
                 <p>Months of Training Experience</p>
             </div>
             <div class="about-info2">
-                <span>5+</span>
+                <span><h1>5+</h1></span>
                 <p>Project Complete</p>
             </div>
         </div>
@@ -157,144 +201,252 @@
             <span>Let Me Introduce Myself</span>
             <h2>About Me</h2>
             <h3>Aspiring Software Developer | Proficient in Java, JavaScript, and React | Experienced in Web Development and Responsive Design | Seeking Opportunities in Software Engineering</h3>
-            <p>As a passionate Full-Stack Developer with expertise in the MERN stack, I thrive on creating innovative web applications that enhance user experiences. My recent project, Cloud Rasoi, is a full-stack food delivery application that I developed to streamline the ordering process and improve customer engagement through real-time order tracking.
-
-                With a solid foundation in JavaScript, React, Node.js, and MySQL, I have successfully built scalable applications that meet user needs and business objectives. My approach combines technical proficiency with a keen eye for design, ensuring that every project not only functions well but also provides an intuitive user interface.
+            <p>
+                As a passionate Full-Stack Developer with expertise in the MERN stack, I thrive on creating innovative web applications that enhance user experiences. My recent project, Cloud Rasoi, is a full-stack food delivery application that I developed to streamline the ordering process and improve customer engagement through real-time order tracking.
+            </p>
+            <div class="more-content" style="display: none;">
+                <p>
+                    With a solid foundation in JavaScript, React, Node.js, and MySQL, I have successfully built scalable applications that meet user needs and business objectives. My approach combines technical proficiency with a keen eye for design, ensuring that every project not only functions well but also provides an intuitive user interface.
+                    
+                    I am committed to continuous learning and staying updated with the latest technologies, which allows me to implement best practices in software development. I enjoy collaborating with cross-functional teams to solve complex problems and deliver high-quality solutions.
+                    
+                    I am excited to connect with like-minded professionals and explore opportunities where I can contribute my skills and passion for technology to drive impactful results.
+                </p>
+            </div>
+            <div class="readmore-btn">
+                <a href="#" class="btn" id="readMoreBtn">Read More</a>
+            </div>
+        </div>        
                 
-                I am committed to continuous learning and staying updated with the latest technologies, which allows me to implement best practices in software development. I enjoy collaborating with cross-functional teams to solve complex problems and deliver high-quality solutions.
-                
-                I am excited to connect with like-minded professionals and explore opportunities where I can contribute my skills and passion for technology to drive impactful results.</p>
-
-                <div class="readmore-btn">
-                    <a href="#" class="btn">Read More</a>
-                </div>
-        </div>
     </section>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- EDUCATION -->
     
-    <section class="education" id="education">
+    <div class="education" id="education">
         <h2 class="edu-heading">Education</h2>
 
         <div class="edu-timeline-items">
 
             <div class="edu-timeline-item">
                 <div class="edu-timeline-dot"></div>
-                    <div class="edu-timeline-data">2020</div>
+                    <div class="edu-timeline-data">2005 - 2013</div>
                     <div class="edu-timeline-content">
-                        <h3>Senior Secondary</h3>
-                        <p>12 in holfddfffffffffffffffffffffffffffffffg</p>
+                        <h1>Primary Education</h1><bR>
+                        <h2>Nursery to 5th Grade<br>Cambridge Foundation School</h2>
+                        <p>I completed my early education, These formative years were instrumental in shaping my foundational skills and sparking a lifelong passion for learning. During this time, I developed core competencies in reading, writing, and math, while also nurturing essential soft skills like communication, teamwork, and problem-solving.<br><br>These early experiences laid a strong academic and personal foundation, helping me build the curiosity, discipline, and adaptability that continue to drive my growth and achievements.</p>
                     </div>
                 
             </div>
 
             <div class="edu-timeline-item">
                 <div class="edu-timeline-dot"></div>
-                    <div class="edu-timeline-data">2020</div>
+                    <div class="edu-timeline-data">2013 - 2020</div>
                     <div class="edu-timeline-content">
-                        <h3>Senior Secondary</h3>
-                        <p>12 in holfddfffffffffffffffffffffffffffffffg</p>
+                        <h1>Secondary Education</h1><br>
+                        <h2>6th to 12th Grade<br>Holy Public School</h2>
+                        <p>I built upon my foundational knowledge and explored new academic interests. This period played a key role in expanding my skills across diverse subjects, particularly in science, mathematics, and humanities.<br><br>
+                        At this stage, I was encouraged to think critically, solve complex problems, and work collaboratively. These years helped me grow both academically and personally, cultivating a disciplined work ethic, adaptability, and resilience. The experiences and knowledge gained during this time have been invaluable in preparing me for higher education and future pursuits.</p>
+
                     </div>
                 
             </div>
 
             <div class="edu-timeline-item">
                 <div class="edu-timeline-dot"></div>
-                    <div class="edu-timeline-data">2020</div>
+                    <div class="edu-timeline-data">2021 - Present</div>
                     <div class="edu-timeline-content">
-                        <h3>Senior Secondary</h3>
-                        <p>12 in holfddfffffffffffffffffffffffffffffffg</p>
+                        <h1>Higher Education</h1><br>
+                        <h2>B.TECH (Computer Science & Engineering)<br>Anand Engineering College</h2>
+                        <p>This experience has been transformative, as I dive deeply into core technical subjects like programming, data structures, algorithms, and software development.<br><br>
+                        Throughout my studies, I have developed practical skills in areas such as web development, cloud computing, and database management, while also participating in hands-on projects and internships that bring theory into real-world application. Anand Engineering College has not only strengthened my technical foundation but has also enhanced my problem-solving abilities, teamwork, and adaptability, preparing me to excel in the dynamic field of technology.</p>
+
                     </div>
                 
             </div>
 
-            <div class="edu-timeline-item">
+            <!-- <div class="edu-timeline-item">
                 <div class="edu-timeline-dot"></div>
                     <div class="edu-timeline-data">2020</div>
                     <div class="edu-timeline-content">
                         <h3>Senior Secondary</h3>
                         <p>12 in holfddfffffffffffffffffffffffffffffffg</p>
                     </div>                
-            </div>        
+            </div>         -->
         </div>
-    </section>
+    </div>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- SKILLS SECTION -->
 
-    <div class="banner">
+    <div class="banner" id="skills">
+
+        <!-- Technical Skills -->
         <div class="slider" style="--quantity:17">
-            <div class="item" style="--position:1"><img src="Assets/Bootstrap-logo.png"></div>
-            <div class="item" style="--position:2"><img src="Assets/Aws-logo.png"></div>
-            <div class="item" style="--position:3"><img src="Assets/css-logo.png"></div>
-            <div class="item" style="--position:4"><img src="Assets/Express-logo.png"></div>
-            <div class="item" style="--position:5"><img src="Assets/Git-logo.png"></div>
-            <div class="item" style="--position:6"><img src="Assets/Html-logo.png"></div>
-            <div class="item" style="--position:7"><img src="Assets/Java-logo.png"></div>
-            <div class="item" style="--position:8"><img src="Assets/JavaScript-logo.png"></div>
-            <div class="item" style="--position:9"><img src="Assets/Jira-logo.png"></div>
-            <div class="item" style="--position:10"><img src="Assets/Mysql-logo.png"></div>
-            <div class="item" style="--position:11"><img src="Assets/Node-logo.png"></div>
-            <div class="item" style="--position:12"><img src="Assets/Office-logo.png"></div>
-            <div class="item" style="--position:13"><img src="Assets/Photoshop-logo.png"></div>
-            <div class="item" style="--position:14"><img src="Assets/Postman-logo.png"></div>
-            <div class="item" style="--position:15"><img src="Assets/React-logo.png"></div>
-            <div class="item" style="--position:16"><img src="Assets/Sql-logo.png"></div>
-            <div class="item" style="--position:17"><img src="Assets/Vscode-logo.png"></div>
+            <div class="item" style="--position:1"><img src="Assets/Skills/Bootstrap-logo.png"></div>
+            <div class="item" style="--position:2"><img src="Assets/Skills/Aws-logo.png"></div>
+            <div class="item" style="--position:3"><img src="Assets/Skills/css-logo.png"></div>
+            <div class="item" style="--position:4"><img src="Assets/Skills/Express-logo.png"></div>
+            <div class="item" style="--position:5"><img src="Assets/Skills/Git-logo.png"></div>
+            <div class="item" style="--position:6"><img src="Assets/Skills/Html-logo.png"></div>
+            <div class="item" style="--position:7"><img src="Assets/Skills/Java-logo.png"></div>
+            <div class="item" style="--position:8"><img src="Assets/Skills/JavaScript-logo.png"></div>
+            <div class="item" style="--position:9"><img src="Assets/Skills/Jira-logo.png"></div>
+            <div class="item" style="--position:10"><img src="Assets/Skills/Mysql-logo.png"></div>
+            <div class="item" style="--position:11"><img src="Assets/Skills/Node-logo.png"></div>
+            <div class="item" style="--position:12"><img src="Assets/Skills/Office-logo.png"></div>
+            <div class="item" style="--position:13"><img src="Assets/Skills/Photoshop-logo.png"></div>
+            <div class="item" style="--position:14"><img src="Assets/Skills/Postman-logo.png"></div>
+            <div class="item" style="--position:15"><img src="Assets/Skills/React-logo.png"></div>
+            <div class="item" style="--position:16"><img src="Assets/Skills/Sql-logo.png"></div>
+            <div class="item" style="--position:17"><img src="Assets/Skills/Vscode-logo.png"></div>
         </div>
 
         <div class="model">
-            <img src="Assets/MySkills.png">
+            <img src="Assets/Skills/MySkills.png">
         </div>
+
+        <!-- Soft Skills -->
+        <div class="card-section">
+            <div class="card">Communication</div>
+            <div class="card">Problem-Solving</div>
+            <div class="card">Team Collaboration</div>
+            <div class="card">Time Management</div>
+            <div class="card">Adaptability</div>
+            <div class="card">Agile Methodologies</div>
+        </div>
+        
+      
+        
     </div>
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- SERVICES SECTION -->
 
-    <section class="service" id="service">
-        <h2 class="heading">Services</h2>
-
+    <div class="service-wrapper" id="services">
+        <h1 class="service-heading">Services</h1>
         <div class="service-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI DESIGN</h4>
-                    <p>fjsvjdvbdfjvdfkjvfdjvnjdknvkdnvjkdnvjkfdnvjkdnvjkdfnvjkdnvjkdnkfdnvjdkvjksjiodjkldjvkldvkldm</p>
-                </div>
-            </div>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI DESIGN</h4>
-                    <p>fjsvjdvbdfjvdfkjvfdjvnjdknvkdnvjkdnvjkfdnvjkdnvjkdfnvjkdnvjkdnkfdnvjdkvjksjiodjkldjvkldvkldm</p>
+            <input type="radio" name="service-slide" id="c1" />
+             <label for="c1" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">1</div>
+                    <div class="service-desc">
+                        <h1>Full-Stack Development</h1>
+                        <p>Experienced MERN stack developer, skilled in building end-to-end web applications, covering both front-end and back-end functionalities.</p>
+                    </div>
                 </div>
-            </div>
+             </label>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI DESIGN</h4>
-                    <p>fjsvjdvbdfjvdfkjvfdjvnjdknvkdnvjkdnvjkfdnvjkdnvjkdfnvjkdnvjkdnkfdnvjdkvjksjiodjkldjvkldvkldm</p>
-                </div>
-            </div>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI DESIGN</h4>
-                    <p>fjsvjdvbdfjvdfkjvfdjvnjdknvkdnvjkdnvjkfdnvjkdnvjkdfnvjkdnvjkdnkfdnvjdkvjksjiodjkldjvkldvkldm</p>
+             <input type="radio" name="service-slide" id="c2" />
+             <label for="c2" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">2</div>
+                    <div class="service-desc">
+                        <h1>Front-End Development</h1>
+                        <p>Proficient in creating responsive and visually appealing interfaces using HTML5, CSS3, and JavaScript. Skilled in React and Bootstrap for crafting modular, high-performance front-end components.</p>
+                    </div>
                 </div>
-            </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c3" />
+             <label for="c3" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">3</div>
+                    <div class="service-desc">
+                        <h1>Back-End Development</h1>
+                        <p>Skilled in server-side development with Node.js and Express, including creating REST APIs, managing server logic, and ensuring robust back-end support for web applications.</p>
+                    </div>
+                </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c4" />
+             <label for="c4" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">4</div>
+                    <div class="service-desc">
+                        <h1>Database Management</h1>
+                        <p>Experienced in managing both SQL (MySQL) and NoSQL (MongoDB) databases, designing scalable structures, and optimizing queries for efficient data storage and retrieval.</p>
+                    </div>
+                </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c5" />
+             <label for="c5" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">5</div>
+                    <div class="service-desc">
+                        <h1>Responsive Web Design</h1>
+                        <p>Expertise in responsive design principles to ensure consistent functionality and aesthetics across devices, enhancing user experience on both desktop and mobile.</p>
+                    </div>
+                </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c6" />
+             <label for="c6" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">6</div>
+                    <div class="service-desc">
+                        <h1>Software Development</h1>
+                        <p>Comprehensive experience in software development, including planning, coding, testing, and deploying applications. Skilled in software engineering principles and agile methodologies, allowing for high-quality, maintainable solutions.</p>
+                    </div>
+                </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c7" />
+             <label for="c7" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">7</div>
+                    <div class="service-desc">
+                        <h1>Project Development and Deployment</h1>
+                        <p>Proficient in full-cycle project development from concept to deployment, utilizing Git for version control and AWS for deployment, ensuring smooth project management and delivery.</p>
+                    </div>
+                </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c8" />
+             <label for="c8" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">8</div>
+                    <div class="service-desc">
+                        <h1>Software Integration and API Development</h1>
+                        <p>Skilled in integrating third-party tools and APIs, as well as developing custom APIs for enhanced application capabilities and improved functionality.</p>
+                    </div>
+                </div>
+             </label>
+
+
+             <input type="radio" name="service-slide" id="c9" />
+             <label for="c9" class="service-card">
+                <div class="service-row">
+                    <div class="service-icon">9</div>
+                    <div class="service-desc">
+                        <h1>UI/UX Optimization</h1>
+                        <p>Focused on creating intuitive and visually pleasing user interfaces, optimizing user experience through clean, functional design, and paying attention to user feedback.</p>
+                    </div>
+                </div>
+             </label>
+
         </div>
+    </div>
 
-    </section>
+    
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
     <!-- PROJECTS SECTION -->
 
-    <div class="project-container">
+    <div class="project-container" id="projects">
         <h2 class="project-title">My Projects</h2>
         <div class="project-slider">
 
@@ -350,29 +502,195 @@
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
+    <!-- CERTIFICATION SECTION -->
+     
+    <div class="certify" id="certify">
+        <h2 class="certify-heading">Certifications</h2>
+
+        <div class="certify-container">
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Diploma.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Master Diploma in Computer Education & System Management</h4>
+                    <h5><i>- By Vinayak Institute of Technology</i></h5>
+                    <p>Completed a comprehensive diploma covering computer education and system management fundamentals</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Dsa.webp" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>DSA with Java</h4>
+                    <h5><i>- By Apna College  (Alpha Batch)</i></h5>
+                    <p>Gained in-depth knowledge of data structures and algorithms, applying Java for problem-solving and efficient code.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Intro-AI.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Introduction to Artificial Intelligence</h4>
+                    <h5><i>- By Great Learning Academy</i></h5>
+                    <p>Studied core AI concepts, including machine learning and neural networks, with practical insights into AI applications.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Ms-PowerBI.png" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Microsoft Power BI</h4>
+                    <h5><i>- By Microsoft</i></h5>
+                    <p>Acquired skills in data visualization and business intelligence, creating interactive dashboards and reports using Power BI.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Oop.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>OOPs in Java</h4>
+                    <h5><i>- By Great Learning Academy</i></h5>
+                    <p> Learned Object-Oriented Programming concepts in Java, focusing on encapsulation, inheritance, and polymorphism.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Application-AI.webp" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Applications of AI</h4>
+                    <h5><i>- By Great Learning Academy</i></h5>
+                    <p>Explored real-world applications of artificial intelligence across various industries.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Java-udemy.webp" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>JAVA Programming - Beginner to Master</h4>
+                    <h5><i>- By Udemy</i></h5>
+                    <p> Mastered Java programming from basics to advanced, including core concepts and practical projects.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Intro-tech-job-simulation.png" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Introduction to Technology Apprenticeship Job Simulation</h4>
+                    <h5><i>- By Accenture UK (Forage)</i></h5>
+                    <p>Gained practical exposure to technology apprenticeships through simulated workplace tasks.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Cybersecurity-JobSimulation.png" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Cybersecurity Analyst Job Simulation</h4>
+                    <h5><i>- By Tata Group (Forage)</i></h5>
+                    <p> Developed foundational cybersecurity analysis skills, focusing on threat detection and mitigation.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/SE-JobSimulation.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Software Engineering Job Simulation</h4>
+                    <h5><i>- By J.P. Morgan (Forage)</i></h5>
+                    <p>Practiced real-world software engineering tasks, including system design and development, in a professional simulation.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Master-Data-Management.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Master Data Management</h4>
+                    <h5><i>- By TCS ION</i></h5>
+                    <p>Trained in data management principles, focusing on ensuring data accuracy, consistency, and governance.
+                    </p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Communication-tcs.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Communication Skills</h4>
+                    <h5><i>- By TCS ION</i></h5>
+                    <p>Improved verbal and non-verbal communication skills for better clarity and effectiveness in professional settings.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Presentation-tcs.png" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Presentation Skills</h4>
+                    <h5><i>- By TCS ION</i></h5>
+                    <p>Developed impactful presentation techniques, focusing on clarity, audience engagement, and confident delivery.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/GD.png" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>How to Stand out in Group Discussions</h4>
+                    <h5><i>- By TCS ION</i></h5>
+                    <p>Learned strategies for effectively contributing in group discussions and standing out in collaborative settings.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/JAVA-Programming.webp" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Certification Program in JAVA Programming</h4>
+                    <h5><i>- By The Digital Adda</i></h5>
+                    <p>Comprehensive JAVA training covering fundamentals, OOPs, and advanced programming techniques.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+            <div class="certify-box">
+                <img src="Assets/Certifications/Flipkart-GRiD.jpg" alt="Invalid">
+                <div class="certify-layer">
+                    <h4>Level 1: E-Commerce & Tech Quiz of Flipkart GRiD 6.0</h4>
+                    <h5><i>- By Software Development Track - Flipkart</i></h5>
+                    <p>Demonstrated knowledge of e-commerce and technology concepts in Flipkart’s competitive quiz platform.</p>
+                    <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
     <!-- CONTACT SECTION -->
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action="">
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                </div>
-                <div class="input-box">
-                    <input type="number" placeholder="Phone No.">
-                    <input type="text" placeholder="Subject">
-                </div>
-            </div>
-
-            <div class="input-group-2">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message" class="btn">
-            </div>
-        </form>
-    </section>
+    <div class="contact-container" id="contact">
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <h1>Contact Me</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone No." required>
+            <h4>Type Your Message Here ...</h4>
+            <textarea id="message" required></textarea>
+            <input type="submit" value="Send" id="contact-btn">
+          </form>
+    </div>   
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
@@ -380,10 +698,10 @@
 
     <footer class="footer">
         <div class="social">
-            <a href="#"><i class='bx bxl-gmail'></i></a>
-            <a href="#"><i class='bx bxl-linkedin'></i></a>
-            <a href="#"><i class='bx bxl-github' ></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="mailto:faizahali2002@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+            <a href="https://www.linkedin.com/in/faizah-ali02" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Faizah-Ali" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://www.instagram.com/er.faizahali/" target="_blank"><i class='bx bxl-instagram' ></i></a>
         </div>
 
         <ul class="list">
@@ -392,15 +710,15 @@
             </li>
 
             <li>
-                <a href="#">Services</a>
+                <a href="#services">Services</a>
             </li>
 
             <li>
-                <a href="#">About Me</a>
+                <a href="#about">About Me</a>
             </li>
 
             <li>
-                <a href="#">Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
 

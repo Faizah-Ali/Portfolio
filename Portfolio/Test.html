@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Slider</title>
     <link rel="stylesheet" href="Test.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
    
-    
-    
+    <div class="contact-container">
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <h1>Contact Me</h1>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone No." required>
+            <h4>Type Your Message Here ...</h4>
+            <textarea id="message" required></textarea>
+            <input type="submit" value="Send" id="contact-btn">
+          </form>
+    </div>    
 
     <script src="Test.js"></script>
 </body>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 
 *{
     margin: 0;
@@ -7,3 +7,172 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    /* --bg-color : #080808;
+    --second-bg-color : #131313;*/
+   
+    --main-color : #ea1566;
+    --text-color : black;
+}
+
+.contact-container{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(Assets/Bg-Designs/B1.jpg) no-repeat center center/cover;
+}
+
+.contact-container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+
+.contact-container form h1{
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.contact-container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.contact-container form input::placeholder{
+    color: #ddd;
+}
+
+.contact-container form #lastName,
+.contact-container form #phone{
+    margin-left: 20px;
+}
+
+.contact-container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.contact-container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194, 194, 194, 0.713);
+}
+
+.contact-container form #contact-btn{
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.contact-container form #contact-btn:hover{
+    opacity: 0.7;
+}
+
+
+/* Existing CSS above */
+
+@media (max-width: 768px) {
+    .contact-container form {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact-container form h1 {
+        width: 100%;
+        font-size: 1.5em;
+    }
+
+    .contact-container form input,
+    .contact-container form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-container form h4 {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contact-container form #contact-btn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Adjust textarea width */
+    .contact-container form textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-container form #lastName,
+    .contact-container form #phone{
+    margin-left: 0px;
+}
+}
+
+@media (max-width: 480px) {
+    .contact-container form h1 {
+        font-size: 1.2em;
+    }
+
+    .contact-container form h4 {
+        font-size: 0.9em;
+    }
+
+    .contact-container form input,
+    .contact-container form textarea {
+        font-size: 14px;
+    }
+
+    .contact-container form #contact-btn {
+        font-size: 18px;
+    }
+
+    .contact-container form #lastName,
+    .contact-container form #phone{
+    margin-left: 0px;
+}
+}
